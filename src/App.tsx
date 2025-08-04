@@ -4,7 +4,7 @@ import { MathExercise, MemoryExercise } from './features';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/brain-exercise">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/memory" element={<Workout exerciseContractor={MemoryExercise} level={2} repetations={20}/>} />
